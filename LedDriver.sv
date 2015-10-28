@@ -47,4 +47,3 @@ module LedDriver(input clk,
     endcase
   end
 endmodule
-
