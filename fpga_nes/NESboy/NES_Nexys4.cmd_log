@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.xst" -ofn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.syr" 
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.xst" -ofn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.syr" 
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.xst" -ofn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf -p xc6slx4-tqg144-3 NES_Nexys4.ngc NES_Nexys4.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf -p xc6slx4-tqg144-3 NES_Nexys4.ngc NES_Nexys4.ngd  
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.xst" -ofn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf -p xc6slx4-tqg144-3 NES_Nexys4.ngc NES_Nexys4.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf -p xc6slx4-tqg144-3 NES_Nexys4.ngc NES_Nexys4.ngd  
+map -intstyle ise -p xc6slx4-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o NES_Nexys4_map.ncd NES_Nexys4.ngd NES_Nexys4.pcf 
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.xst" -ofn "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf -p xc6slx45t-fgg484-3 NES_Nexys4.ngc NES_Nexys4.ngd  
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o NES_Nexys4_map.ncd NES_Nexys4.ngd NES_Nexys4.pcf 
+map -intstyle ise -p xc6slx45t-fgg484-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o NES_Nexys4_map.ncd NES_Nexys4.ngd NES_Nexys4.pcf 

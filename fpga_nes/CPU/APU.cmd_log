@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/CPU/APU.xst" -ofn "C:/NESBoy/fpga_nes/CPU/APU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 APU.ngc APU.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o APU_map.ncd APU.ngd APU.pcf 
+par -w -intstyle ise -ol high -t 1 APU_map.ncd APU.ncd APU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml APU.twx APU.ncd -o APU.twr APU.pcf 
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/CPU/APU.xst" -ofn "C:/NESBoy/fpga_nes/CPU/APU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s400-pq208-4 APU.ngc APU.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o APU_map.ncd APU.ngd APU.pcf 
+par -w -intstyle ise -ol high -t 1 APU_map.ncd APU.ncd APU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml APU.twx APU.ncd -o APU.twr APU.pcf 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<Synthesis_deps>
+
+  <Version XPSPNVER="1.0" EDKVER="14.7" />
+  <FPGA family="spartan3" device="xc3s200" package="ft256" speedgrade="-4" />
+  <File Type="MHS" URL="../../microblaze_mcs_v1_4.mhs" />
+  <File Type="UCF" URL="../../data\microblaze_mcs_v1_4.ucf" />
+  <File Type="PlatgenOpt" URL="../platgen.opt" />
+
+
+</Synthesis_deps>

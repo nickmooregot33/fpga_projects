@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/clk_wiz_v3_6.v -lang verilog -prj NESboy -o clk_wiz_v3_6.spl -module clk_wiz_v3_6 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 clk_wiz_v3_6.spl C:/NESBoy/fpga_nes/NESboy/clk_wiz_v3_6.sym 

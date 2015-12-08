@@ -1,0 +1,16 @@
+MO spartan3 NULL spartan3.v vlg04/spartan3.bin 1449614049
+MO CPU NULL ../CPU/cpu.v vlg70/_c_p_u.bin 1449614049
+MO MyAddSub NULL ../CPU/cpu.v vlg7D/_my_add_sub.bin 1449614049
+MO magic_memory NULL magic_memory.v vlg05/magic__memory.bin 1449614049
+MO clock_dcm NULL clock_dcm.v vlg23/clock__dcm.bin 1449614049
+MO MicroCodeTableInner NULL MicroCode.v vlg21/_micro_code_table_inner.bin 1449614049
+MO MemoryController NULL spartan3.v vlg35/_memory_controller.bin 1449614049
+MO AddressGenerator NULL ../CPU/cpu.v vlg11/_address_generator.bin 1449614049
+MO UartDemux NULL hw_uart.v vlg03/_uart_demux.bin 1449614049
+MO MicroCodeTable NULL MicroCode.v vlg05/_micro_code_table.bin 1449614049
+MO Rs232Rx NULL hw_uart.v vlg1E/_rs232_rx.bin 1449614049
+MO GameLoader NULL spartan3.v vlg41/_game_loader.bin 1449614049
+MO Rs232Tx NULL hw_uart.v vlg28/_rs232_tx.bin 1449614049
+MO LedDriver NULL hw_led.v vlg2D/_led_driver.bin 1449614049
+MO ProgramCounter NULL ../CPU/cpu.v vlg78/_program_counter.bin 1449614049
+MO NewAlu NULL ../CPU/cpu.v vlg40/_new_alu.bin 1449614049

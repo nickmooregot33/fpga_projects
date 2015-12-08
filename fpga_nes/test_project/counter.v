@@ -1,0 +1,4 @@
+module counter();
+
+
+endmodule

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\NESBoy\fpga_nes\program_test\decoder.ncd
+OUTFILE=C:\NESBoy\fpga_nes\program_test\decoder.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\NESBoy\fpga_nes\program_test
+LICENSE=WebPack
+USER_INFO=211104466_0_0_251
