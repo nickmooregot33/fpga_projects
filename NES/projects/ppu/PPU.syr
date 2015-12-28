@@ -1,0 +1,752 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: PPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PPU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PPU"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : PPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v" in library work
+Module <LoopyGen> compiled
+Module <ClockGen> compiled
+Module <Sprite> compiled
+Module <SpriteSet> compiled
+Module <SpriteRAM> compiled
+Module <SpriteAddressGen> compiled
+Module <BgPainter> compiled
+Module <PixelMuxer> compiled
+Module <PaletteRam> compiled
+Module <PPU> compiled
+No errors in compilation
+Analysis of file <"PPU.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <PPU> in library <work>.
+
+Analyzing hierarchy for module <ClockGen> in library <work>.
+
+Analyzing hierarchy for module <LoopyGen> in library <work>.
+
+Analyzing hierarchy for module <BgPainter> in library <work>.
+
+Analyzing hierarchy for module <SpriteRAM> in library <work>.
+
+Analyzing hierarchy for module <SpriteAddressGen> in library <work>.
+
+Analyzing hierarchy for module <SpriteSet> in library <work>.
+
+Analyzing hierarchy for module <PixelMuxer> in library <work>.
+
+Analyzing hierarchy for module <PaletteRam> in library <work>.
+
+Analyzing hierarchy for module <Sprite> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <PPU>.
+WARNING:Xst:2323 - "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v" line 656: Parameter 2 is not constant in call of system task $write.
+"../../verilog_files/fpganes-master/fpganes-master/src/ppu.v" line 656: $write : Disabling playfield at cycle %d
+
+Module <PPU> is correct for synthesis.
+ 
+Analyzing module <ClockGen> in library <work>.
+Module <ClockGen> is correct for synthesis.
+ 
+Analyzing module <LoopyGen> in library <work>.
+Module <LoopyGen> is correct for synthesis.
+ 
+Analyzing module <BgPainter> in library <work>.
+Module <BgPainter> is correct for synthesis.
+ 
+Analyzing module <SpriteRAM> in library <work>.
+Module <SpriteRAM> is correct for synthesis.
+ 
+Analyzing module <SpriteAddressGen> in library <work>.
+Module <SpriteAddressGen> is correct for synthesis.
+ 
+Analyzing module <SpriteSet> in library <work>.
+Module <SpriteSet> is correct for synthesis.
+ 
+Analyzing module <Sprite> in library <work>.
+Module <Sprite> is correct for synthesis.
+ 
+Analyzing module <PixelMuxer> in library <work>.
+Module <PixelMuxer> is correct for synthesis.
+ 
+Analyzing module <PaletteRam> in library <work>.
+INFO:Xst:2546 - "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v" line 453: reading initialization file "oam_palette.txt".
+Module <PaletteRam> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ClockGen>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+    Found 9-bit up counter for signal <scanline>.
+    Found 1-bit register for signal <is_in_vblank>.
+    Found 9-bit up counter for signal <cycle>.
+    Found 1-bit register for signal <is_pre_render>.
+    Found 4-bit comparator equal for signal <end_of_line$cmp_eq0000> created at line 117.
+    Found 1-bit register for signal <second_frame>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   3 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <ClockGen> synthesized.
+
+
+Synthesizing Unit <LoopyGen>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+    Found 5-bit adder for signal <$add0000> created at line 37.
+    Found 3-bit adder for signal <$add0001> created at line 43.
+    Found 5-bit adder for signal <$add0002> created at line 49.
+    Found 15-bit adder for signal <$add0003> created at line 90.
+    Found 15-bit register for signal <loopy_t>.
+    Found 15-bit register for signal <loopy_v>.
+    Found 1-bit xor2 for signal <loopy_v_10$xor0000> created at line 38.
+    Found 9-bit comparator greatequal for signal <loopy_v_4$cmp_ge0000> created at line 36.
+    Found 9-bit comparator less for signal <loopy_v_4$cmp_lt0000> created at line 36.
+    Found 9-bit comparator less for signal <loopy_v_4$cmp_lt0001> created at line 36.
+    Found 3-bit register for signal <loopy_x>.
+    Found 1-bit register for signal <ppu_address_latch>.
+    Found 1-bit register for signal <ppu_incr>.
+    Summary:
+	inferred  35 D-type flip-flop(s).
+	inferred   4 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <LoopyGen> synthesized.
+
+
+Synthesizing Unit <BgPainter>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+WARNING:Xst:647 - Input <loopy<14:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <loopy<5:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <loopy<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <bg0>.
+    Found 2-bit register for signal <current_attribute_table>.
+    Found 8-bit register for signal <current_name_table>.
+    Found 1-bit 16-to-1 multiplexer for signal <pixel$varindex0000> created at line 438.
+    Found 1-bit 16-to-1 multiplexer for signal <pixel$varindex0001> created at line 438.
+    Found 16-bit register for signal <playfield_pipe_1>.
+    Found 16-bit register for signal <playfield_pipe_2>.
+    Found 9-bit register for signal <playfield_pipe_3>.
+    Found 9-bit register for signal <playfield_pipe_4>.
+    Summary:
+	inferred  68 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <BgPainter> synthesized.
+
+
+Synthesizing Unit <SpriteRAM>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+WARNING:Xst:647 - Input <cycle<7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <oam_inc> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 256x8-bit single-port RAM <Mram_oam> for signal <oam>.
+    Found 32x8-bit single-port RAM <Mram_sprtemp> for signal <sprtemp>.
+WARNING:Xst:737 - Found 2-bit latch for signal <$old_oam_inc_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 1-bit register for signal <sprite0>.
+    Found 1-bit register for signal <spr_overflow>.
+    Found 2-bit adder for signal <$add0000> created at line 281.
+    Found 8-bit register for signal <oam_ptr>.
+    Found 3-bit up counter for signal <p>.
+    Found 9-bit subtractor for signal <spr_y_coord>.
+    Found 1-bit register for signal <sprite0_curr>.
+    Found 2-bit register for signal <state>.
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Counter(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+Unit <SpriteRAM> synthesized.
+
+
+Synthesizing Unit <SpriteAddressGen>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+    Found 1-bit register for signal <dummy_sprite>.
+    Found 1-bit register for signal <flip_x>.
+    Found 1-bit register for signal <flip_y>.
+    Found 8-bit register for signal <temp_tile>.
+    Found 4-bit register for signal <temp_y>.
+    Found 4-bit xor2 for signal <y_f>.
+    Summary:
+	inferred  15 D-type flip-flop(s).
+Unit <SpriteAddressGen> synthesized.
+
+
+Synthesizing Unit <PixelMuxer>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+Unit <PixelMuxer> synthesized.
+
+
+Synthesizing Unit <PaletteRam>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+    Found 32x6-bit single-port RAM <Mram_palette> for signal <palette>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <PaletteRam> synthesized.
+
+
+Synthesizing Unit <Sprite>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+    Found 1-bit register for signal <aprio>.
+    Found 8-bit register for signal <pix1>.
+    Found 8-bit register for signal <pix2>.
+    Found 2-bit register for signal <upper_color>.
+    Found 8-bit down counter for signal <x_coord>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  19 D-type flip-flop(s).
+Unit <Sprite> synthesized.
+
+
+Synthesizing Unit <SpriteSet>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+WARNING:Xst:646 - Signal <load_out0> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <SpriteSet> synthesized.
+
+
+Synthesizing Unit <PPU>.
+    Related source file is "../../verilog_files/fpganes-master/fpganes-master/src/ppu.v".
+WARNING:Xst:646 - Signal <color_intensity> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <bg_patt>.
+    Found 1-bit register for signal <enable_objects>.
+    Found 1-bit register for signal <enable_playfield>.
+    Found 1-bit register for signal <grayscale>.
+    Found 1-bit register for signal <nmi_occured>.
+    Found 1-bit register for signal <obj_patt>.
+    Found 1-bit register for signal <obj_size>.
+    Found 1-bit register for signal <object_clip>.
+    Found 1-bit register for signal <playfield_clip>.
+    Found 1-bit register for signal <sprite0_hit_bg>.
+    Found 1-bit register for signal <vbl_enable>.
+    Found 8-bit register for signal <vram_latch>.
+    Found 1-bit register for signal <vram_read_delayed>.
+    Summary:
+	inferred  20 D-type flip-flop(s).
+Unit <PPU> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 256x8-bit single-port RAM                             : 1
+ 32x6-bit single-port RAM                              : 1
+ 32x8-bit single-port RAM                              : 1
+# Adders/Subtractors                                   : 7
+ 15-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 5-bit adder                                           : 2
+ 7-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 11
+ 3-bit up counter                                      : 1
+ 8-bit down counter                                    : 8
+ 9-bit up counter                                      : 2
+# Registers                                            : 144
+ 1-bit register                                        : 111
+ 2-bit register                                        : 10
+ 3-bit register                                        : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 21
+# Latches                                              : 1
+ 2-bit latch                                           : 1
+# Comparators                                          : 4
+ 4-bit comparator equal                                : 1
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator less                                 : 2
+# Multiplexers                                         : 4
+ 1-bit 16-to-1 multiplexer                             : 2
+ 1-bit 9-to-1 multiplexer                              : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <PaletteRam>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_palette> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 6-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <_and0000_0>    | low      |
+    |     addrA          | connected to signal <addr2>         |          |
+    |     diA            | connected to signal <din>           |          |
+    |     doA            | connected to signal <dout>          |          |
+    -----------------------------------------------------------------------
+Unit <PaletteRam> synthesized (advanced).
+
+Synthesizing (advanced) Unit <SpriteRAM>.
+INFO:Xst:3225 - The RAM <Mram_oam> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <oam_load_0>    | high     |
+    |     addrA          | connected to signal <oam_ptr>       |          |
+    |     diA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <clk>           | rise     |
+    |     addrB          | connected to signal <oam_ptr_mux0000> |          |
+    |     doB            | connected to signal <oam_data>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_sprtemp> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 8-bit                     |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <state<1>_0>    | low      |
+    |     addrA          | connected to signal <sprtemp_ptr>   |          |
+    |     diA            | connected to signal <oam_bus>       |          |
+    |     doA            | connected to signal <sprtemp_data>  |          |
+    -----------------------------------------------------------------------
+Unit <SpriteRAM> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 256x8-bit dual-port block RAM                         : 1
+ 32x6-bit single-port distributed RAM                  : 1
+ 32x8-bit single-port distributed RAM                  : 1
+# Adders/Subtractors                                   : 7
+ 15-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 1
+ 5-bit adder                                           : 2
+ 7-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Counters                                             : 11
+ 3-bit up counter                                      : 1
+ 8-bit down counter                                    : 8
+ 9-bit up counter                                      : 2
+# Registers                                            : 306
+ Flip-Flops                                            : 306
+# Latches                                              : 1
+ 2-bit latch                                           : 1
+# Comparators                                          : 4
+ 4-bit comparator equal                                : 1
+ 9-bit comparator greatequal                           : 1
+ 9-bit comparator less                                 : 2
+# Multiplexers                                         : 4
+ 1-bit 16-to-1 multiplexer                             : 2
+ 1-bit 9-to-1 multiplexer                              : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 4-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PPU> ...
+
+Optimizing unit <ClockGen> ...
+
+Optimizing unit <LoopyGen> ...
+
+Optimizing unit <BgPainter> ...
+
+Optimizing unit <SpriteAddressGen> ...
+
+Optimizing unit <PaletteRam> ...
+
+Optimizing unit <Sprite> ...
+
+Optimizing unit <SpriteRAM> ...
+WARNING:Xst:1294 - Latch <_old_oam_inc_7_0> is equivalent to a wire in block <SpriteRAM>.
+WARNING:Xst:1294 - Latch <_old_oam_inc_7_1> is equivalent to a wire in block <SpriteRAM>.
+
+Optimizing unit <SpriteSet> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PPU, actual ratio is 9.
+FlipFlop obj_size has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 392
+ Flip-Flops                                            : 392
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : PPU.ngr
+Top Level Output File Name         : PPU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 101
+
+Cell Usage :
+# BELS                             : 1110
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 29
+#      LUT2                        : 70
+#      LUT2_D                      : 4
+#      LUT2_L                      : 9
+#      LUT3                        : 301
+#      LUT3_D                      : 15
+#      LUT3_L                      : 9
+#      LUT4                        : 323
+#      LUT4_D                      : 49
+#      LUT4_L                      : 47
+#      MUXCY                       : 94
+#      MUXF5                       : 43
+#      MUXF6                       : 4
+#      VCC                         : 1
+#      XORCY                       : 106
+# FlipFlops/Latches                : 392
+#      FDE                         : 368
+#      FDRE                        : 14
+#      FDRSE                       : 9
+#      FDSE                        : 1
+# RAMS                             : 15
+#      RAM32X1S                    : 14
+#      RAMB16_S9_S9                : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 100
+#      IBUF                        : 23
+#      OBUF                        : 77
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      473  out of   4656    10%  
+ Number of Slice Flip Flops:            391  out of   9312     4%  
+ Number of 4 input LUTs:                889  out of   9312     9%  
+    Number used as logic:               861
+    Number used as RAMs:                 28
+ Number of IOs:                         101
+ Number of bonded IOBs:                 101  out of    232    43%  
+    IOB Flip Flops:                       1
+ Number of BRAMs:                         1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 407   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 13.628ns (Maximum Frequency: 73.381MHz)
+   Minimum input arrival time before clock: 13.398ns
+   Maximum output required time after clock: 21.122ns
+   Maximum combinational path delay: 9.174ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 13.628ns (frequency: 73.381MHz)
+  Total number of paths / destination ports: 79452 / 823
+-------------------------------------------------------------------------
+Delay:               13.628ns (Levels of Logic = 10)
+  Source:            sprite_gen/sprite6/x_coord_4 (FF)
+  Destination:       palette_ram/Mram_palette5 (RAM)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: sprite_gen/sprite6/x_coord_4 to palette_ram/Mram_palette5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.706  sprite_gen/sprite6/x_coord_4 (sprite_gen/sprite6/x_coord_4)
+     LUT4:I0->O            6   0.704   0.748  sprite_gen/sprite6/active25 (sprite_gen/sprite6/active25)
+     LUT3_D:I1->O          1   0.704   0.455  sprite_gen/sprite6/bits_and00001 (sprite_gen/bits6<1>)
+     LUT4:I2->O            1   0.704   0.424  sprite_gen/bits<0>8 (sprite_gen/bits<0>8)
+     LUT4:I3->O            1   0.704   0.595  sprite_gen/bits<0>27 (sprite_gen/bits<0>27)
+     LUT4_D:I0->LO         1   0.704   0.104  sprite_gen/bits<0>105 (N563)
+     LUT4:I3->O            3   0.704   0.566  sprite_gen/bits<0>156 (obj_pixel_noblank<0>)
+     LUT4:I2->O            1   0.704   0.424  pixel_muxer/is_obj210_SW0 (N133)
+     LUT4:I3->O            1   0.704   0.000  _mux0000<1>23_G (N409)
+     MUXF5:I1->O          30   0.321   1.297  _mux0000<1>23 (_mux0000<1>)
+     LUT4:I2->O            6   0.704   0.669  palette_ram/write_ctrl (palette_ram/write_ctrl)
+     RAM32X1S:WE               0.392          palette_ram/Mram_palette3
+    ----------------------------------------
+    Total                     13.628ns (7.640ns logic, 5.988ns route)
+                                       (56.1% logic, 43.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2983 / 569
+-------------------------------------------------------------------------
+Offset:              13.398ns (Levels of Logic = 10)
+  Source:            ain<1> (PAD)
+  Destination:       sprite_ram/Mram_oam (RAM)
+  Destination Clock: clk rising
+
+  Data Path: ain<1> to sprite_ram/Mram_oam
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.218   1.427  ain_1_IBUF (ain_1_IBUF)
+     LUT3:I0->O           11   0.704   0.968  latched_dout<5>21 (N10)
+     LUT3:I2->O            1   0.704   0.455  sprite_ram/Madd__AUX_8_lut<0>21 (sprite_ram/Madd__AUX_8_lut<0>21)
+     LUT4:I2->O           14   0.704   1.004  sprite_ram/Madd__AUX_8_lut<0>18_SW1 (N159)
+     LUT4:I3->O            1   0.704   0.000  sprite_ram/Madd__AUX_8_lut<0>44_SW2_F (N416)
+     MUXF5:I0->O           3   0.321   0.535  sprite_ram/Madd__AUX_8_lut<0>44_SW2 (N273)
+     LUT4_L:I3->LO         1   0.704   0.135  sprite_ram/spr_is_inside_SW2_F (N420)
+     LUT3:I2->O            1   0.704   0.424  sprite_ram/spr_is_inside_SW21 (N319)
+     LUT4:I3->O            2   0.704   0.482  sprite_ram/oam_ptr_mux0000<5>1 (sprite_ram/oam_ptr_mux0000<5>)
+     LUT3:I2->O            1   0.704   0.420  sprite_ram/oam_ptr_mux0000<5>_01 (sprite_ram/oam_ptr_mux0000<5>_0_0)
+     RAMB16_S9_S9:ADDRB2        0.377          sprite_ram/Mram_oam
+    ----------------------------------------
+    Total                     13.398ns (7.548ns logic, 5.850ns route)
+                                       (56.3% logic, 43.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 88299 / 69
+-------------------------------------------------------------------------
+Offset:              21.122ns (Levels of Logic = 15)
+  Source:            sprite_gen/sprite6/x_coord_4 (FF)
+  Destination:       dout<5> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: sprite_gen/sprite6/x_coord_4 to dout<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.591   0.706  sprite_gen/sprite6/x_coord_4 (sprite_gen/sprite6/x_coord_4)
+     LUT4:I0->O            6   0.704   0.748  sprite_gen/sprite6/active25 (sprite_gen/sprite6/active25)
+     LUT3_D:I1->O          1   0.704   0.455  sprite_gen/sprite6/bits_and00011 (sprite_gen/bits6<0>)
+     LUT4:I2->O            1   0.704   0.424  sprite_gen/bits<1>8 (sprite_gen/bits<1>8)
+     LUT4:I3->O            1   0.704   0.595  sprite_gen/bits<1>27 (sprite_gen/bits<1>27)
+     LUT4_D:I0->LO         1   0.704   0.104  sprite_gen/bits<1>105 (N562)
+     LUT4:I3->O            3   0.704   0.566  sprite_gen/bits<1>156 (obj_pixel_noblank<1>)
+     LUT4:I2->O            1   0.704   0.424  pixel_muxer/is_obj210_SW1 (N135)
+     LUT4:I3->O            1   0.704   0.000  _mux0000<0>23_G (N4111)
+     MUXF5:I1->O          30   0.321   1.341  _mux0000<0>23 (_mux0000<0>)
+     LUT3:I1->O           12   0.704   0.961  palette_ram/addr2<3>1 (palette_ram/addr2<3>)
+     RAM32X1S:A3->O        2   1.025   0.482  palette_ram/Mram_palette6 (color2<5>)
+     LUT3:I2->O            2   0.704   0.622  latched_dout<5>7 (latched_dout<5>7)
+     LUT4:I0->O            1   0.704   0.000  latched_dout<5>43_G (N515)
+     MUXF5:I1->O           1   0.321   0.420  latched_dout<5>43 (dout_5_OBUF)
+     OBUF:I->O                 3.272          dout_5_OBUF (dout<5>)
+    ----------------------------------------
+    Total                     21.122ns (13.274ns logic, 7.848ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 69 / 18
+-------------------------------------------------------------------------
+Delay:               9.174ns (Levels of Logic = 5)
+  Source:            ain<1> (PAD)
+  Destination:       dout<4> (PAD)
+
+  Data Path: ain<1> to dout<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            24   1.218   1.427  ain_1_IBUF (ain_1_IBUF)
+     LUT3:I0->O           11   0.704   1.108  latched_dout<5>21 (N10)
+     LUT4:I0->O            1   0.704   0.000  latched_dout<4>151 (latched_dout<4>15)
+     MUXF5:I1->O           1   0.321   0.420  latched_dout<4>15_f5 (dout_4_OBUF)
+     OBUF:I->O                 3.272          dout_4_OBUF (dout<4>)
+    ----------------------------------------
+    Total                      9.174ns (6.219ns logic, 2.955ns route)
+                                       (67.8% logic, 32.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 10.24 secs
+ 
+--> 
+
+Total memory usage is 281648 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

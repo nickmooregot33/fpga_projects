@@ -1,0 +1,5 @@
+set -tmpdir "C:/NESBoy/fpga_nes/NESboy/xst/projnav.tmp"
+set -xsthdpdir "C:/NESBoy/fpga_nes/NESboy/xst"
+elaborate
+-ifn clk_wiz_v3_6.prj
+-ifmt mixed

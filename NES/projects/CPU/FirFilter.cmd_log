@@ -1,0 +1,1 @@
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I FirFilter.ngc FirFilter.ngd  

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Nov 30 14:56:31 2015
+# Process ID: 6896
+# Log file: C:/NESBoy/fpga_nes/NESboy/planAhead_run_1/planAhead.log
+# Journal file: C:/NESBoy/fpga_nes/NESboy/planAhead_run_1\planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\NESBoy\fpga_nes\NESboy\planAhead_run_1\NESboy.ppr}

@@ -1,0 +1,320 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s400-4-pq208
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "top.v" in library work
+Compiling verilog file "../../verilog_files/fpganes-master/fpganes-master/src/hw_uart.v" in library work
+Module <top> compiled
+ERROR:HDLCompilers:26 - "../../verilog_files/fpganes-master/fpganes-master/src/hw_uart.v" line 4 expecting 'endmodule', found 'module'
+Module <Rs232Rx> compiled
+Compiling verilog file "magic_memory.v" in library work
+Module <UartDemux> compiled
+ERROR:HDLCompilers:26 - "magic_memory.v" line 34 expecting ')', found 'resp'
+ERROR:HDLCompilers:26 - "magic_memory.v" line 41 unexpected token: '['
+Module <magic_memory> compiled
+ERROR:HDLCompilers:26 - "magic_memory.v" line 41 expecting 'endmodule', found '7'
+ERROR:HDLCompilers:26 - "magic_memory.v" line 54 unexpected token: ')'
+ERROR:HDLCompilers:26 - "magic_memory.v" line 56 unexpected token: 'mem'
+Compiling verilog file "cpu.v" in library work
+Compiling verilog include file "MicroCode.v"
+ERROR:HDLCompilers:26 - "MicroCode.v" line 1 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 1 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 1 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 1 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 1 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2056 unexpected token: 'State'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2060 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2060 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2060 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2060 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2060 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2062 unexpected token: 'M'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2364 unexpected token: 'M'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2365 unexpected token: 'R'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2366 unexpected token: 'R'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2367 unexpected token: 'R'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2368 unexpected token: 'R'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2369 unexpected token: 'M'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2370 unexpected token: 'R'
+ERROR:HDLCompilers:26 - "MicroCode.v" line 2371 unexpected token: 'R'
+ERROR:HDLCompilers:26 - "cpu.v" line 7 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 8 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 9 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 9 unexpected token: 'OFL'
+ERROR:HDLCompilers:26 - "cpu.v" line 10 unexpected token: 'C6'
+ERROR:HDLCompilers:26 - "cpu.v" line 13 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 13 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 13 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 14 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 14 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 14 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 15 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 15 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 15 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 16 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 16 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 16 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 17 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 17 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 17 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 18 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 18 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 18 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 19 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 19 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 19 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 19 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 20 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 20 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 20 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 21 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 21 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 22 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 22 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 23 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 23 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 24 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 24 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 25 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 25 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 26 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 26 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 27 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 27 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 28 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 28 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 29 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 29 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 33 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 34 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 35 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 36 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 37 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 38 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 40 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 41 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 43 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 44 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 45 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 46 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 48 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 49 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 51 unexpected token: 'o_right_input'
+ERROR:HDLCompilers:26 - "cpu.v" line 52 unexpected token: 'o_second_op'
+ERROR:HDLCompilers:26 - "cpu.v" line 54 unexpected token: 'o_fc'
+ERROR:HDLCompilers:26 - "cpu.v" line 57 unexpected token: 'R'
+ERROR:HDLCompilers:26 - "cpu.v" line 74 unexpected token: 'IntR'
+ERROR:HDLCompilers:26 - "cpu.v" line 74 unexpected token: 'CI'
+ERROR:HDLCompilers:26 - "cpu.v" line 75 unexpected token: 'CR'
+ERROR:HDLCompilers:26 - "cpu.v" line 75 unexpected token: 'R'
+ERROR:HDLCompilers:26 - "cpu.v" line 81 unexpected token: 'AddVO'
+ERROR:HDLCompilers:26 - "cpu.v" line 82 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 82 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 82 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 82 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 82 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 82 unexpected token: '.'
+ERROR:HDLCompilers:26 - "cpu.v" line 86 unexpected token: 'Result'
+ERROR:HDLCompilers:26 - "cpu.v" line 86 unexpected token: 'L'
+ERROR:HDLCompilers:26 - "cpu.v" line 87 unexpected token: 'Result'
+ERROR:HDLCompilers:26 - "cpu.v" line 87 unexpected token: 'L'
+ERROR:HDLCompilers:26 - "cpu.v" line 88 unexpected token: 'Result'
+ERROR:HDLCompilers:26 - "cpu.v" line 88 unexpected token: 'L'
+ERROR:HDLCompilers:26 - "cpu.v" line 89 unexpected token: '6'
+ERROR:HDLCompilers:26 - "cpu.v" line 89 unexpected token: '7'
+ERROR:HDLCompilers:26 - "cpu.v" line 89 unexpected token: 'Result'
+ERROR:HDLCompilers:26 - "cpu.v" line 89 unexpected token: 'AddR'
+ERROR:HDLCompilers:26 - "cpu.v" line 90 unexpected token: '5'
+ERROR:HDLCompilers:26 - "cpu.v" line 90 unexpected token: 'Result'
+ERROR:HDLCompilers:26 - "cpu.v" line 90 unexpected token: 'IntR'
+ERROR:HDLCompilers:26 - "cpu.v" line 107 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 108 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 109 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 110 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 111 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 112 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 114 unexpected token: 'AH'
+ERROR:HDLCompilers:26 - "cpu.v" line 117 unexpected token: 'AL'
+ERROR:HDLCompilers:26 - "cpu.v" line 124 unexpected token: 'NewAL'
+ERROR:HDLCompilers:26 - "cpu.v" line 124 unexpected token: '('
+ERROR:HDLCompilers:26 - "cpu.v" line 124 unexpected token: '('
+ERROR:HDLCompilers:26 - "cpu.v" line 128 unexpected token: 'TmpVal'
+ERROR:HDLCompilers:26 - "cpu.v" line 149 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 150 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 151 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 152 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 153 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 154 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 154 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 161 unexpected token: '1'
+ERROR:HDLCompilers:26 - "cpu.v" line 161 unexpected token: '('
+ERROR:HDLCompilers:26 - "cpu.v" line 162 unexpected token: 'T'
+ERROR:HDLCompilers:26 - "cpu.v" line 163 unexpected token: 'T'
+ERROR:HDLCompilers:26 - "cpu.v" line 173 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 173 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 174 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 175 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 176 unexpected token: 'input'
+ERROR:HDLCompilers:26 - "cpu.v" line 177 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 177 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 178 unexpected token: 'output'
+ERROR:HDLCompilers:26 - "cpu.v" line 179 unexpected token: 'output'
+WARNING:HDLCompilers:171 - "cpu.v" line 180 Attribute 'X' redefined
+ERROR:HDLCompilers:26 - "cpu.v" line 180 unexpected token: 'Y'
+WARNING:HDLCompilers:171 - "cpu.v" line 181 Attribute 'T' redefined
+ERROR:HDLCompilers:26 - "cpu.v" line 181 unexpected token: 'P'
+WARNING:HDLCompilers:171 - "cpu.v" line 223 Attribute 'ce' redefined
+ERROR:HDLCompilers:26 - "cpu.v" line 223 unexpected token: '{'
+ERROR:HDLCompilers:26 - "cpu.v" line 223 unexpected token: 'IrFlags'
+WARNING:HDLCompilers:171 - "cpu.v" line 223 Attribute 'T' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 223 Attribute 'X' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 223 Attribute 'Y' redefined
+ERROR:HDLCompilers:26 - "cpu.v" line 223 unexpected token: 'AXCarry'
+WARNING:HDLCompilers:171 - "cpu.v" line 226 Attribute 'ce' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 226 Attribute 'reset' redefined
+ERROR:HDLCompilers:26 - "cpu.v" line 226 unexpected token: 'MicroCode'
+ERROR:HDLCompilers:26 - "cpu.v" line 230 unexpected token: 'ZO'
+WARNING:HDLCompilers:171 - "cpu.v" line 231 Attribute 'X' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 231 Attribute 'Y' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 231 Attribute 'DIN' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 231 Attribute 'T' redefined
+ERROR:HDLCompilers:26 - "cpu.v" line 231 unexpected token: 'P'
+ERROR:HDLCompilers:26 - "cpu.v" line 231 unexpected token: 'P'
+WARNING:HDLCompilers:171 - "cpu.v" line 231 Attribute 'VO' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 231 Attribute 'SO' redefined
+ERROR:HDLCompilers:26 - "cpu.v" line 231 unexpected token: 'AluIntR'
+WARNING:HDLCompilers:171 - "cpu.v" line 245 Attribute 'ce' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 245 Attribute 'DIN' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 245 Attribute 'T' redefined
+ERROR:HDLCompilers:26 - "cpu.v" line 245 unexpected token: 'JumpNoOverflow'
+ERROR:HDLCompilers:26 - "cpu.v" line 274 unexpected token: '1'
+ERROR:HDLCompilers:26 - "cpu.v" line 274 unexpected token: '!'
+ERROR:HDLCompilers:26 - "cpu.v" line 274 unexpected token: 'P'
+ERROR:HDLCompilers:26 - "cpu.v" line 285 unexpected token: 'SP'
+ERROR:HDLCompilers:26 - "cpu.v" line 289 unexpected token: '!'
+ERROR:HDLCompilers:26 - "cpu.v" line 289 unexpected token: '!'
+ERROR:HDLCompilers:26 - "cpu.v" line 289 unexpected token: '~'
+ERROR:HDLCompilers:26 - "cpu.v" line 310 unexpected token: '2'
+ERROR:HDLCompilers:26 - "cpu.v" line 310 unexpected token: '3'
+ERROR:HDLCompilers:26 - "cpu.v" line 310 unexpected token: 'LoadSP'
+ERROR:HDLCompilers:26 - "cpu.v" line 323 unexpected token: 'P'
+ERROR:HDLCompilers:26 - "cpu.v" line 323 unexpected token: 'P'
+ERROR:HDLCompilers:26 - "cpu.v" line 323 unexpected token: 'P'
+WARNING:HDLCompilers:171 - "cpu.v" line 323 Attribute 'ZO' redefined
+WARNING:HDLCompilers:171 - "cpu.v" line 323 Attribute 'VO' redefined
+ERROR:HDLCompilers:26 - "cpu.v" line 323 unexpected token: 'SO'
+ERROR:HDLCompilers:26 - "cpu.v" line 326 unexpected token: 'P'
+ERROR:HDLCompilers:26 - "cpu.v" line 326 unexpected token: 'DIN'
+ERROR:HDLCompilers:26 - "cpu.v" line 360 expecting '*)', found 'EOF'
+ERROR:HDLCompilers:26 - "cpu.v" line 360 unexpected token: 'EOF'
+Analysis of file <"top.prj"> failed.
+--> 
+
+Total memory usage is 245244 kilobytes
+
+Number of errors   :  177 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

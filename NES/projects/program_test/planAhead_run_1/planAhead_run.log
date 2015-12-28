@@ -1,0 +1,37 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/NESBoy/fpga_nes/program_test/pa.fromHdl.tcl
+# create_project -name program_test -dir "C:/NESBoy/fpga_nes/program_test/planAhead_run_1" -part xc3s200ft256-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "decoder.ucf" [current_fileset -constrset]
+Adding file 'C:/NESBoy/fpga_nes/program_test/decoder.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {decoder.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top decoder $srcset
+# add_files [list {decoder.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s200ft256-4
+Using Verific elaboration
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/NESBoy/fpga_nes/program_test/decoder.vhd" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3/hd_int_macros.edn]
+INFO: [Common 17-344] 'open_rtl_design' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+update_compile_order -fileset sim_1
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Nov 17 16:58:21 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

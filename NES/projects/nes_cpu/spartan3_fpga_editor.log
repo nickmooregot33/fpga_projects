@@ -1,0 +1,23 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   C:\NESBoy\fpga_nes\nes_cpu
+#Date/Time:
+#:T   Tue Dec 08 15:12:22 2015
+#------------------------------
+	#Reading spartan3.ncd...
+	#Loading device for application Rf_Device from file '3s200.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "spartan3" is an NCD, version 3.2, device xc3s200, package ft256, speed -4
+	#Design creation date: 2015.12.08.21.09.50
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'CLK50MHZ'
+	#3
+unselect comp 'CLK50MHZ'
+	#4
+select -k comp 'LED<0>'

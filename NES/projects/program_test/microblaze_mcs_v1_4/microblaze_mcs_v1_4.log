@@ -1,0 +1,42 @@
+=====================
+Opened log file
+=====================
+Created pcores directory
+=====================
+Opened log file
+=====================
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Xilinx EDK 14.7 Build EDK_P.20131013
+
+Copied C:/Xilinx/14.7/ISE_DS/EDK/data/xflow/bitgen_spartan3.ut to etc directory
+Copied file C:/Xilinx/14.7/ISE_DS/EDK/data/xflow/fast_runtime.opt to etc
+directory
+
+Overriding IP level properties ...
+
+Computing clock values...
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+
+Checking platform address map ...
+Created backup of etc/bitgen.ut to etc/bitgen.ut.virtex5
+Copied C:/Xilinx/14.7/ISE_DS/EDK/data/xflow/bitgen_spartan3.ut to etc directory
+Created backup of etc/fast_runtime.opt to etc/fast_runtime.opt.virtex5
+Copied file C:/Xilinx/14.7/ISE_DS/EDK/data/xflow/fast_runtime.opt to etc
+directory
+No changes to be saved in MHS file
+Saved project XMP file
+Saved Make file
+Xilinx Platform Studio (XPS)
+Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Writing filter settings....
+Done writing filter settings to:
+	C:\NESBoy\fpga_nes\program_test\microblaze_mcs_v1_4\etc\microblaze_mcs_v1_4.filters
+Done writing Tab View settings to:
+	C:\NESBoy\fpga_nes\program_test\microblaze_mcs_v1_4\etc\microblaze_mcs_v1_4.gui

@@ -1,0 +1,107 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/NESBoy/fpga_nes/NESboy/pa.fromHdl.tcl
+# create_project -name NESboy -dir "C:/NESBoy/fpga_nes/NESboy/planAhead_run_1" -part xc6slx4tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf" [current_fileset -constrset]
+Adding file 'C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {../../verilog_files/fpganes-master/fpganes-master/src/dsp.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top FirFilter $srcset
+# add_files [list {C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx4tqg144-3
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/dsp.v" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx4/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site E3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:7]
+CRITICAL WARNING: [Constraints 18-11] Could not find net 'CLK100MHZ' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:8]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U9 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:12]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U8 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:13]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R7 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:14]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:15]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:16]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V7 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:17]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:18]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:19]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:20]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:21]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:22]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:23]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:24]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:25]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site P3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:26]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site P4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:27]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T8 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:30]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V9 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:31]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R8 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:32]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:33]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:34]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:35]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U7 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:36]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:37]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:38]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:39]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:40]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:41]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'LED<12>' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:42]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'LED<12>' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:42]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:43]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:44]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'LED<15>' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:45]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'LED<15>' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:45]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:55]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:56]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:57]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:58]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site K3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:59]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:60]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:61]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:63]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:65]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:66]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:67]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:68]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:69]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:70]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:71]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:72]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site C12 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:75]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site E16 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:76]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site F15 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:77]
+INFO: [Common 17-14] Message 'Designutils 20-30' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'MemDB<15>' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:243]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'MemDB<15>' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:243]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'MemAdr<12>' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:257]
+CRITICAL WARNING: [Constraints 18-11] Could not find net or pin 'MemAdr<12>' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:257]
+Finished Parsing UCF File [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'sys_clk_pin', timing constraint is ignored [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:9]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 8dae0505
+open_rtl_design: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 617.980 ; gain = 217.898
+update_compile_order -fileset sim_1
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Nov 30 14:59:25 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

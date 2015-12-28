@@ -1,0 +1,184 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Nov 30 15:03:25 2015
+# Process ID: 7260
+# Log file: C:/NESBoy/fpga_nes/NESboy/planAhead_run_2/planAhead.log
+# Journal file: C:/NESBoy/fpga_nes/NESboy/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/NESBoy/fpga_nes/NESboy/pa.fromNetlist.tcl
+# create_project -name NESboy -dir "C:/NESBoy/fpga_nes/NESboy/planAhead_run_2" -part xc6slx4tqg144-3
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/NESBoy/fpga_nes/NESboy/NES_Nexys4.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/NESBoy/fpga_nes/NESboy} }
+# set_property target_constrs_file "C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf" [current_fileset -constrset]
+Adding file 'C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf' to fileset 'constrs_1'
+# add_files [list {C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc6slx4tqg144-3
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design NES_Nexys4.ngc ...
+WARNING:NetListWriters:298 - No output is written to NES_Nexys4.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus doubler_pixel[14 : 1] on block
+   NES_Nexys4 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus loader_btn[7 : 0] on block NES_Nexys4 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus nes/addr[15 : 0] on block NES_Nexys4 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus nes/apu_dout[3 : 0] on block NES_Nexys4
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   nes/apu/Sq2/Madd_ShiftedPeriod[10]_GND_60_o_add_3_OUT_cy[5 : 1] on block
+   NES_Nexys4 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus nes/apu/Sq1/PeriodRhs[5 : 1] on block
+   NES_Nexys4 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus nes/cpu/MicroCode[37 : 0] on block
+   NES_Nexys4 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus nes/ppu/loopy0/Madd_n0131_Madd_lut[5 :
+   0] on block NES_Nexys4 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/Next1[14]_Prev0[14]_mux_6_OUT[10 :
+   0] on block NES_Nexys4 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/Next2[14]_Prev1[14]_mux_12_OUT[10 :
+   0] on block NES_Nexys4 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/blender/H[14]_B[14]_mux_0_OUT[14 :
+   0] on block NES_Nexys4 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   hq2x/blender/inner_blend3/Mmult_Cmul_Madd_cy[4 : 2] on block NES_Nexys4 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   hq2x/blender/inner_blend2/Mmult_Cmul_Madd_cy[4 : 2] on block NES_Nexys4 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   hq2x/blender/inner_blend1/Mmult_Cmul_Madd_cy[4 : 2] on block NES_Nexys4 is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/blender/diff_checker/Msub_b_cy[3 :
+   0] on block NES_Nexys4 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/blender/diff_checker/Msub_g_cy[3 :
+   0] on block NES_Nexys4 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/blender/diff_checker/Msub_r_cy[3 :
+   0] on block NES_Nexys4 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/diffcheck1/Msub_b_cy[3 : 0] on
+   block NES_Nexys4 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/diffcheck1/Msub_r_cy[3 : 0] on
+   block NES_Nexys4 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/diffcheck0/Msub_b_cy[3 : 0] on
+   block NES_Nexys4 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus hq2x/diffcheck0/Msub_r_cy[3 : 0] on
+   block NES_Nexys4 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus loader/ines_15[127 : 74] on block
+   NES_Nexys4 is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file NES_Nexys4.edif ...
+ngc2edif: Total memory usage is 88080 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/NESboy.data/cache/NES_Nexys4_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_2/NESboy.data/cache/NES_Nexys4_ngc_zx.edif]
+CRITICAL WARNING: [Designutils 20-1022] Could not resolve non-primitive black box cell 'MMCM_ADV' instantiated in module 'clock_21mhz/mmcm_adv_inst'.
+Resolution: File names need to match cell names: an EDIF definition will be found in MMCM_ADV.edf; a HDL definition may be placed in any Verilog/VHDL file.
+CRITICAL WARNING: [Netlist 29-29] Cell 'MMCM_ADV' defined in file 'NES_Nexys4.ngc' is not a supported primitive for spartan6 part: xc6slx4tqg144-3.  Instance 'clock_21mhz/mmcm_adv_inst' will be treated as a black box, not an architecture primitive.
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-43] Netlist 'NES_Nexys4' is not ideal for floorplanning, since the cellview 'NES_Nexys4' defined in file 'NES_Nexys4.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx4/ClockBuffers.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx4/tqg144/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site E3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:7]
+CRITICAL WARNING: [Constraints 18-11] Could not find net 'CLK100MHZ' [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:8]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U9 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:12]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U8 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:13]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R7 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:14]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:15]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:16]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V7 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:17]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:18]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:19]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:20]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:21]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:22]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:23]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:24]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:25]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site P3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:26]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site P4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:27]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T8 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:30]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V9 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:31]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R8 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:32]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:33]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:34]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site T4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:35]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U7 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:36]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:37]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:38]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:39]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site V1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:40]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:41]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site U1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:43]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site R2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:44]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:55]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:56]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:57]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:58]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site K3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:59]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:60]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:61]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:63]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:65]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M6 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:66]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M3 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:67]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N5 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:68]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N2 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:69]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site N4 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:70]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site L1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:71]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site M1 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:72]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site C12 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:75]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site E16 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:76]
+CRITICAL WARNING: [Designutils 20-30] Unrecognized site F15 [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:77]
+INFO: [Common 17-14] Message 'Designutils 20-30' appears 50 times and further instances of the messages will be disabled. Use the Tcl command set_msg_limit to change the current settings.
+Finished Parsing UCF File [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf]
+CRITICAL WARNING: [Constraints 18-329] No definition for group 'sys_clk_pin', timing constraint is ignored [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf:9]
+INFO: [Designutils 20-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM256X1S => RAM256X1S (RAMS64E, RAMS64E, RAMS64E, RAMS64E, MUXF7, MUXF7, MUXF8): 8 instances
+  RAM32X1S => RAM32X1S (RAMS32): 14 instances
+
+Phase 0 | Netlist Checksum: 14adfe75
+link_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 607.867 ; gain = 182.516
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See C:/NESBoy/fpga_nes/NESboy\planAhead_pid7260.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Nov 30 15:11:54 2015...
+INFO: [Common 17-83] Releasing license: PlanAhead

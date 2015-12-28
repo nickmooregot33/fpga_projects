@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/hw_sound.v -lang verilog -prj NESboy -o SoundDriver.spl -module SoundDriver -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 SoundDriver.spl C:/NESBoy/fpga_nes/NESboy/SoundDriver.sym 

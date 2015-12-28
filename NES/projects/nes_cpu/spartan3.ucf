@@ -1,0 +1,137 @@
+# Xilinx Spartan3 Starter Board (Rev E) UCF file
+# by Brian Szmyd
+# Updated by Wimbo
+
+# Clock
+#Net "Clk50Mhz"		LOC = "T9";
+#NET "Clk50Mhz"		PERIOD = 20ns;   # 20ns = 50Mhz
+
+#Net "Socket"		LOC = "D9";
+#NET "Socket"		PERIOD = ??????? ns;
+
+# User Switches
+#NET "SW0"		LOC = "F12";
+#NET "SW1"		LOC = "G12";
+#NET "SW2"		LOC = "H14";
+#NET "SW3"		LOC = "H13";
+#NET "SW4"		LOC = "J14";
+#NET "SW5"		LOC = "J13";
+#NET "SW6"		LOC = "K14";
+#NET "SW7"		LOC = "K13";
+
+# User Buttons
+#NET "BTN0"		LOC = "M13";
+#NET "BTN1"		LOC = "M14";
+#NET "BTN2"		LOC = "L13";
+#NET "BTN3"		LOC = "L14";
+
+# LEDs
+#NET "LD0"		LOC = "K12";
+#NET "LD1"		LOC = "P14";
+#NET "LD2"		LOC = "L12";
+#NET "LD3"		LOC = "N14";
+#NET "LD4"		LOC = "P13";
+#NET "LD5"		LOC = "N12";
+#NET "LD6"		LOC = "P12";
+#NET "LD7"		LOC = "P11";
+
+# 7 Segment
+#NET "AN0"		LOC = "D14";
+#NET "AN1"		LOC = "G14";
+#NET "AN2"		LOC = "F14";
+#NET "AN3"		LOC = "E13";
+
+#NET "CA"		LOC = "E14";
+#NET "CB"		LOC = "G13";
+#NET "CC"		LOC = "N15";
+#NET "CD"		LOC = "P15";
+#NET "CE"		LOC = "R16";
+#NET "CF"		LOC = "F13";
+#NET "CG"		LOC = "N16";
+#NET "CDP"		LOC = "P16";
+
+# VGA Signals
+#NET "RED"		LOC = "R12";
+#NET "GREEN"		LOC = "T12";
+#NET "BLUE"		LOC = "R11";
+#NET "HSYNC"		LOC = "R9";
+#NET "VSYNC"		LOC = "T10";
+
+# RS-232 Port
+#NET "RXD"		LOC = "T13";
+#NET "TXD"		LOC = "R13";
+#NET "RXD_A"		LOC = "N10";
+#NET "TXD_A"		LOC = "T14";
+
+# PS/2 Signals
+#NET "PS2D"		LOC = "M15";
+#NET "PS2C"		LOC = "M16";
+
+# 1MB Surface Mounted RAM
+# --------------------------------------------
+
+# Address Bus
+#NET "A<17>"		LOC = "L3";
+#NET "A<16>"		LOC = "K5";
+#NET "A<15>"		LOC = "K3";
+#NET "A<14>"		LOC = "J3";
+#NET "A<13>"		LOC = "J4";
+#NET "A<12>"		LOC = "H4";
+#NET "A<11>"		LOC = "H3";
+#NET "A<10>"		LOC = "G5";
+#NET "A<9>"		LOC = "E4";
+#NET "A<8>"		LOC = "E3";
+#NET "A<7>"		LOC = "F4";
+#NET "A<6>"		LOC = "F3";
+#NET "A<5>"		LOC = "G4";
+#NET "A<4>"		LOC = "L4";
+#NET "A<3>"		LOC = "M3";
+#NET "A<2>"		LOC = "M4";
+#NET "A<1>"		LOC = "N3";
+#NET "A<0>"		LOC = "L5";
+
+# Control Signals
+#NET "OE_N"		LOC = "K4";
+#NET "WE_N"		LOC = "G3";
+#NET "CE1_N"		LOC = "P7";
+#NET "CE2_N"		LOC = "N5";
+#NET "UB1_N"		LOC = "T4";
+#NET "UB2_N"		LOC = "R4";
+#NET "LB1_N"		LOC = "P6";
+#NET "LB2_N"		LOC = "P5";
+
+# Data Signals Chip 1
+#NET "IO1<15>"		LOC = "R1";
+#NET "IO1<14>"		LOC = "P1";
+#NET "IO1<13>"		LOC = "L2";
+#NET "IO1<12>"		LOC = "J2";
+#NET "IO1<11>"		LOC = "H1";
+#NET "IO1<10>"		LOC = "F2";
+#NET "IO1<9>"		LOC = "P8";
+#NET "IO1<8>"		LOC = "D3";
+#NET "IO1<7>"		LOC = "B1";
+#NET "IO1<6>"		LOC = "C1";
+#NET "IO1<5>"		LOC = "C2";
+#NET "IO1<4>"		LOC = "R5";
+#NET "IO1<3>"		LOC = "T5";
+#NET "IO1<2>"		LOC = "R6";
+#NET "IO1<1>"		LOC = "T8";
+#NET "IO1<0>"		LOC = "N7";
+
+# Data Signals Chip 2
+#NET "IO2<15>"		LOC = "N1";
+#NET "IO2<14>"		LOC = "M1";
+#NET "IO2<13>"		LOC = "K2";
+#NET "IO2<12>"		LOC = "C3";
+#NET "IO2<11>"		LOC = "F5";
+#NET "IO2<10>"		LOC = "G1";
+#NET "IO2<9>"		LOC = "E2";
+#NET "IO2<8>"		LOC = "D2";
+#NET "IO2<7>"		LOC = "D1";
+#NET "IO2<6>"		LOC = "E1";
+#NET "IO2<5>"		LOC = "G2";
+#NET "IO2<4>"		LOC = "J1";
+#NET "IO2<3>"		LOC = "K1";
+#NET "IO2<2>"		LOC = "M2";
+#NET "IO2<1>"		LOC = "N2";
+#NET "IO2<0>"		LOC = "P2";

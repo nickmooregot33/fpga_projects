@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/CPU/top.xst" -ofn "C:/NESBoy/fpga_nes/CPU/top.syr" 
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/CPU/top.xst" -ofn "C:/NESBoy/fpga_nes/CPU/top.syr" 
+xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/CPU/top.xst" -ofn "C:/NESBoy/fpga_nes/CPU/top.syr" 

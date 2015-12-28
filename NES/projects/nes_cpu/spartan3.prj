@@ -1,0 +1,6 @@
+verilog work "magic_memory.v"
+verilog work "hw_uart.v"
+verilog work "hw_led.v"
+verilog work "clock_dcm.v"
+verilog work "../CPU/cpu.v"
+verilog work "spartan3.v"

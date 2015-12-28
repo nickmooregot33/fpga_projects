@@ -1,0 +1,2160 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc
+C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf -p
+xc6slx4-tqg144-3 FirFilter.ngc FirFilter.ngd
+
+Reading NGO file "C:/NESBoy/fpga_nes/NESboy/FirFilter.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file
+"C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf"
+...
+Resolving constraint associations...
+Checking Constraint Associations...
+ERROR:ConstraintSystem:59 - Constraint <NET "CLK100MHZ"   LOC = "E3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   7)]: NET "CLK100MHZ" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "CLK100MHZ"   LOC = "E3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   7)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   7)]: NET "CLK100MHZ" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "CLK100MHZ" TNM_NET = sys_clk_pin;>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   8)]: NET "CLK100MHZ" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_sys_clk_pin = PERIOD
+   sys_clk_pin 100 MHz HIGH 50%;>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   9)]: Unable to find an active 'TNM' or 'TimeGrp' constraint named
+   'sys_clk_pin'.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<0>"			LOC = "U9"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   12)]: NET "SW<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<0>"			LOC = "U9"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   12)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   12)]: NET "SW<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<1>"			LOC = "U8"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   13)]: NET "SW<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<1>"			LOC = "U8"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   13)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   13)]: NET "SW<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<2>"			LOC = "R7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   14)]: NET "SW<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<2>"			LOC = "R7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   14)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   14)]: NET "SW<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<3>"			LOC = "R6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   15)]: NET "SW<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<3>"			LOC = "R6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   15)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   15)]: NET "SW<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<4>"			LOC = "R5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   16)]: NET "SW<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<4>"			LOC = "R5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   16)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   16)]: NET "SW<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<5>"			LOC = "V7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   17)]: NET "SW<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<5>"			LOC = "V7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   17)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   17)]: NET "SW<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<6>"			LOC = "V6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   18)]: NET "SW<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<6>"			LOC = "V6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   18)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   18)]: NET "SW<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<7>"			LOC = "V5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   19)]: NET "SW<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<7>"			LOC = "V5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   19)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   19)]: NET "SW<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<8>"			LOC = "U4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   20)]: NET "SW<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<8>"			LOC = "U4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   20)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   20)]: NET "SW<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<9>"			LOC = "V2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   21)]: NET "SW<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<9>"			LOC = "V2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   21)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   21)]: NET "SW<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<10>"			LOC = "U2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   22)]: NET "SW<10>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<10>"			LOC = "U2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   22)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   22)]: NET "SW<10>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<11>"			LOC = "T3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   23)]: NET "SW<11>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<11>"			LOC = "T3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   23)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   23)]: NET "SW<11>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<12>"			LOC = "T1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   24)]: NET "SW<12>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<12>"			LOC = "T1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   24)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   24)]: NET "SW<12>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<13>"			LOC = "R3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   25)]: NET "SW<13>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<13>"			LOC = "R3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   25)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   25)]: NET "SW<13>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<14>"			LOC = "P3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   26)]: NET "SW<14>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<14>"			LOC = "P3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   26)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   26)]: NET "SW<14>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SW<15>"			LOC = "P4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   27)]: NET "SW<15>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SW<15>"			LOC = "P4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   27)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   27)]: NET "SW<15>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<0>"			LOC = "T8"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   30)]: NET "LED<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<0>"			LOC = "T8"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   30)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   30)]: NET "LED<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<1>"			LOC = "V9"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   31)]: NET "LED<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<1>"			LOC = "V9"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   31)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   31)]: NET "LED<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<2>"			LOC = "R8"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   32)]: NET "LED<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<2>"			LOC = "R8"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   32)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   32)]: NET "LED<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<3>"			LOC = "T6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   33)]: NET "LED<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<3>"			LOC = "T6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   33)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   33)]: NET "LED<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<4>"			LOC = "T5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   34)]: NET "LED<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<4>"			LOC = "T5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   34)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   34)]: NET "LED<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<5>"			LOC = "T4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   35)]: NET "LED<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<5>"			LOC = "T4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   35)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   35)]: NET "LED<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<6>"			LOC = "U7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   36)]: NET "LED<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<6>"			LOC = "U7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   36)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   36)]: NET "LED<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<7>"			LOC = "U6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   37)]: NET "LED<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<7>"			LOC = "U6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   37)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   37)]: NET "LED<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<8>"			LOC = "V4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   38)]: NET "LED<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<8>"			LOC = "V4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   38)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   38)]: NET "LED<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<9>"			LOC = "U3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   39)]: NET "LED<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<9>"			LOC = "U3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   39)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   39)]: NET "LED<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<10>"			LOC = "V1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   40)]: NET "LED<10>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<10>"			LOC = "V1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   40)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   40)]: NET "LED<10>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<11>"			LOC = "R1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   41)]: NET "LED<11>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<11>"			LOC = "R1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   41)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   41)]: NET "LED<11>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<12>"			LOC = "P5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   42)]: NET "LED<12>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<12>"			LOC = "P5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   42)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   42)]: NET "LED<12>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<13>"			LOC = "U1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   43)]: NET "LED<13>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<13>"			LOC = "U1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   43)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   43)]: NET "LED<13>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<14>"			LOC = "R2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   44)]: NET "LED<14>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<14>"			LOC = "R2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   44)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   44)]: NET "LED<14>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "LED<15>"			LOC = "P2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   45)]: NET "LED<15>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "LED<15>"			LOC = "P2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   45)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   45)]: NET "LED<15>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_CA<0>"			LOC = "L3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   55)]: NET "SSEG_CA<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_CA<0>"			LOC = "L3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   55)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   55)]: NET "SSEG_CA<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_CA<1>"			LOC = "N1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   56)]: NET "SSEG_CA<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_CA<1>"			LOC = "N1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   56)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   56)]: NET "SSEG_CA<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_CA<2>"			LOC = "L5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   57)]: NET "SSEG_CA<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_CA<2>"			LOC = "L5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   57)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   57)]: NET "SSEG_CA<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_CA<3>"			LOC = "L4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   58)]: NET "SSEG_CA<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_CA<3>"			LOC = "L4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   58)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   58)]: NET "SSEG_CA<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_CA<4>"			LOC = "K3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   59)]: NET "SSEG_CA<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_CA<4>"			LOC = "K3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   59)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   59)]: NET "SSEG_CA<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_CA<5>"			LOC = "M2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   60)]: NET "SSEG_CA<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_CA<5>"			LOC = "M2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   60)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   60)]: NET "SSEG_CA<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_CA<6>"			LOC = "L6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   61)]: NET "SSEG_CA<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_CA<6>"			LOC = "L6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   61)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   61)]: NET "SSEG_CA<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_CA<7>"				LOC = "M4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   63)]: NET "SSEG_CA<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_CA<7>"				LOC = "M4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   63)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   63)]: NET "SSEG_CA<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_AN<0>"			LOC = "N6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   65)]: NET "SSEG_AN<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_AN<0>"			LOC = "N6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   65)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   65)]: NET "SSEG_AN<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_AN<1>"			LOC = "M6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   66)]: NET "SSEG_AN<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_AN<1>"			LOC = "M6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   66)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   66)]: NET "SSEG_AN<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_AN<2>"			LOC = "M3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   67)]: NET "SSEG_AN<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_AN<2>"			LOC = "M3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   67)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   67)]: NET "SSEG_AN<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_AN<3>"			LOC = "N5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   68)]: NET "SSEG_AN<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_AN<3>"			LOC = "N5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   68)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   68)]: NET "SSEG_AN<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_AN<4>"			LOC = "N2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   69)]: NET "SSEG_AN<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_AN<4>"			LOC = "N2"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   69)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   69)]: NET "SSEG_AN<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_AN<5>"			LOC = "N4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   70)]: NET "SSEG_AN<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_AN<5>"			LOC = "N4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   70)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   70)]: NET "SSEG_AN<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_AN<6>"			LOC = "L1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   71)]: NET "SSEG_AN<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_AN<6>"			LOC = "L1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   71)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   71)]: NET "SSEG_AN<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "SSEG_AN<7>"			LOC = "M1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   72)]: NET "SSEG_AN<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "SSEG_AN<7>"			LOC = "M1"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   72)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   72)]: NET "SSEG_AN<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "CPU_RESET"		LOC = "C12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   75)]: NET "CPU_RESET" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "CPU_RESET"		LOC = "C12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   75)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   75)]: NET "CPU_RESET" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "BTN<4>"				LOC = "E16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   76)]: NET "BTN<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BTN<4>"				LOC = "E16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   76)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   76)]: NET "BTN<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "BTN<2>"				LOC = "F15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   77)]: NET "BTN<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BTN<2>"				LOC = "F15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   77)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   77)]: NET "BTN<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "BTN<3>"				LOC = "T16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   78)]: NET "BTN<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BTN<3>"				LOC = "T16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   78)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   78)]: NET "BTN<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "BTN<0>"				LOC = "R10"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   79)]: NET "BTN<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BTN<0>"				LOC = "R10"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   79)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   79)]: NET "BTN<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "BTN<1>"				LOC = "V10"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   80)]: NET "BTN<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BTN<1>"				LOC = "V10"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   80)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   80)]: NET "BTN<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "AUD_MCLK"		LOC = "B13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   83)]: NET "AUD_MCLK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "AUD_MCLK"		LOC = "B13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   83)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   83)]: NET "AUD_MCLK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "AUD_LRCK"		LOC = "F14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   84)]: NET "AUD_LRCK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "AUD_LRCK"		LOC = "F14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   84)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   84)]: NET "AUD_LRCK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "AUD_SCK"			LOC = "D17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   85)]: NET "AUD_SCK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "AUD_SCK"			LOC = "D17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   85)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   85)]: NET "AUD_SCK" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "AUD_SDIN"		LOC = "E17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   86)]: NET "AUD_SDIN" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "AUD_SDIN"		LOC = "E17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   86)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   86)]: NET "AUD_SDIN" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_r<0>"		LOC = "A3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   137)]: NET "vga_r<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_r<0>"		LOC = "A3"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   137)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   137)]: NET "vga_r<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_r<1>"		LOC = "B4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   138)]: NET "vga_r<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_r<1>"		LOC = "B4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   138)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   138)]: NET "vga_r<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_r<2>"		LOC = "C5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   139)]: NET "vga_r<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_r<2>"		LOC = "C5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   139)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   139)]: NET "vga_r<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_r<3>"		LOC = "A4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   140)]: NET "vga_r<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_r<3>"		LOC = "A4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   140)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   140)]: NET "vga_r<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_b<0>"		LOC = "B7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   141)]: NET "vga_b<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_b<0>"		LOC = "B7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   141)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   141)]: NET "vga_b<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_b<1>"		LOC = "C7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   142)]: NET "vga_b<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_b<1>"		LOC = "C7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   142)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   142)]: NET "vga_b<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_b<2>"		LOC = "D7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   143)]: NET "vga_b<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_b<2>"		LOC = "D7"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   143)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   143)]: NET "vga_b<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_b<3>"		LOC = "D8"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   144)]: NET "vga_b<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_b<3>"		LOC = "D8"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   144)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   144)]: NET "vga_b<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_g<0>"		LOC = "C6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   145)]: NET "vga_g<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_g<0>"		LOC = "C6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   145)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   145)]: NET "vga_g<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_g<1>"		LOC = "A5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   146)]: NET "vga_g<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_g<1>"		LOC = "A5"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   146)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   146)]: NET "vga_g<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_g<2>"		LOC = "B6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   147)]: NET "vga_g<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_g<2>"		LOC = "B6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   147)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   147)]: NET "vga_g<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_g<3>"		LOC = "A6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   148)]: NET "vga_g<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_g<3>"		LOC = "A6"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   148)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   148)]: NET "vga_g<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_h"			LOC = "B11"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   149)]: NET "vga_h" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_h"			LOC = "B11"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   149)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   149)]: NET "vga_h" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "vga_v"			LOC = "B12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   150)]: NET "vga_v" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "vga_v"			LOC = "B12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   150)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   150)]: NET "vga_v" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "UART_RXD"				LOC = "C4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   186)]: NET "UART_RXD" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UART_RXD"				LOC = "C4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   186)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   186)]: NET "UART_RXD" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "UART_TXD"				LOC = "D4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   187)]: NET "UART_TXD" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "UART_TXD"				LOC = "D4"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   187)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   187)]: NET "UART_TXD" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemOE"			LOC = "H14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   218)]: NET "MemOE" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemOE"			LOC = "H14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   218)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   218)]: NET "MemOE" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemWR"			LOC = "R11"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   219)]: NET "MemWR" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemWR"			LOC = "R11"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   219)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   219)]: NET "MemWR" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdv"			LOC = "T13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   220)]: NET "MemAdv" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdv"			LOC = "T13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   220)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   220)]: NET "MemAdv" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemWait"			LOC = "T14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   221)]: NET "MemWait" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemWait"			LOC = "T14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   221)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   221)]: NET "MemWait" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemClk"			LOC = "T15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   222)]: NET "MemClk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemClk"			LOC = "T15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   222)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   222)]: NET "MemClk" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "RamCS"			LOC = "L18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   223)]: NET "RamCS" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RamCS"			LOC = "L18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   223)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   223)]: NET "RamCS" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "RamCRE"			LOC = "J14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   224)]: NET "RamCRE" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RamCRE"			LOC = "J14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   224)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   224)]: NET "RamCRE" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "RamLB"			LOC = "J15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   225)]: NET "RamLB" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RamLB"			LOC = "J15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   225)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   225)]: NET "RamLB" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "RamUB"			LOC = "J13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   226)]: NET "RamUB" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "RamUB"			LOC = "J13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   226)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   226)]: NET "RamUB" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<0>"			LOC = "R12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   228)]: NET "MemDB<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<0>"			LOC = "R12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   228)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   228)]: NET "MemDB<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<1>"			LOC = "T11"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   229)]: NET "MemDB<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<1>"			LOC = "T11"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   229)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   229)]: NET "MemDB<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<2>"			LOC = "U12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   230)]: NET "MemDB<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<2>"			LOC = "U12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   230)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   230)]: NET "MemDB<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<3>"			LOC = "R13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   231)]: NET "MemDB<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<3>"			LOC = "R13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   231)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   231)]: NET "MemDB<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<4>"			LOC = "U18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   232)]: NET "MemDB<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<4>"			LOC = "U18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   232)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   232)]: NET "MemDB<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<5>"			LOC = "R17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   233)]: NET "MemDB<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<5>"			LOC = "R17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   233)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   233)]: NET "MemDB<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<6>"			LOC = "T18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   234)]: NET "MemDB<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<6>"			LOC = "T18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   234)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   234)]: NET "MemDB<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<7>"			LOC = "R18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   235)]: NET "MemDB<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<7>"			LOC = "R18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   235)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   235)]: NET "MemDB<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<8>"			LOC = "F18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   236)]: NET "MemDB<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<8>"			LOC = "F18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   236)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   236)]: NET "MemDB<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<9>"			LOC = "G18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   237)]: NET "MemDB<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<9>"			LOC = "G18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   237)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   237)]: NET "MemDB<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<10>"		LOC = "G17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   238)]: NET "MemDB<10>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<10>"		LOC = "G17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   238)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   238)]: NET "MemDB<10>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<11>"		LOC = "M18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   239)]: NET "MemDB<11>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<11>"		LOC = "M18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   239)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   239)]: NET "MemDB<11>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<12>"		LOC = "M17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   240)]: NET "MemDB<12>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<12>"		LOC = "M17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   240)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   240)]: NET "MemDB<12>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<13>"		LOC = "P18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   241)]: NET "MemDB<13>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<13>"		LOC = "P18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   241)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   241)]: NET "MemDB<13>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<14>"		LOC = "N17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   242)]: NET "MemDB<14>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<14>"		LOC = "N17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   242)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   242)]: NET "MemDB<14>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemDB<15>"		LOC = "P17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   243)]: NET "MemDB<15>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemDB<15>"		LOC = "P17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   243)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   243)]: NET "MemDB<15>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<0>"		LOC = "J18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   245)]: NET "MemAdr<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<0>"		LOC = "J18"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   245)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   245)]: NET "MemAdr<0>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<1>"		LOC = "H17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   246)]: NET "MemAdr<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<1>"		LOC = "H17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   246)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   246)]: NET "MemAdr<1>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<2>"		LOC = "H15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   247)]: NET "MemAdr<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<2>"		LOC = "H15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   247)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   247)]: NET "MemAdr<2>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<3>"		LOC = "J17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   248)]: NET "MemAdr<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<3>"		LOC = "J17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   248)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   248)]: NET "MemAdr<3>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<4>"		LOC = "H16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   249)]: NET "MemAdr<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<4>"		LOC = "H16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   249)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   249)]: NET "MemAdr<4>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<5>"		LOC = "K15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   250)]: NET "MemAdr<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<5>"		LOC = "K15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   250)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   250)]: NET "MemAdr<5>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<6>"		LOC = "K13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   251)]: NET "MemAdr<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<6>"		LOC = "K13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   251)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   251)]: NET "MemAdr<6>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<7>"		LOC = "N15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   252)]: NET "MemAdr<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<7>"		LOC = "N15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   252)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   252)]: NET "MemAdr<7>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<8>"		LOC = "V16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   253)]: NET "MemAdr<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<8>"		LOC = "V16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   253)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   253)]: NET "MemAdr<8>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<9>"		LOC = "U14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   254)]: NET "MemAdr<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<9>"		LOC = "U14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   254)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   254)]: NET "MemAdr<9>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<10>"		LOC = "V14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   255)]: NET "MemAdr<10>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<10>"		LOC = "V14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   255)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   255)]: NET "MemAdr<10>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<11>"		LOC = "V12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   256)]: NET "MemAdr<11>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<11>"		LOC = "V12"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   256)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   256)]: NET "MemAdr<11>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<12>"		LOC = "P14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   257)]: NET "MemAdr<12>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<12>"		LOC = "P14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   257)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   257)]: NET "MemAdr<12>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<13>"		LOC = "U16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   258)]: NET "MemAdr<13>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<13>"		LOC = "U16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   258)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   258)]: NET "MemAdr<13>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<14>"		LOC = "R15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   259)]: NET "MemAdr<14>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<14>"		LOC = "R15"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   259)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   259)]: NET "MemAdr<14>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<15>"		LOC = "N14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   260)]: NET "MemAdr<15>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<15>"		LOC = "N14"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   260)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   260)]: NET "MemAdr<15>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<16>"		LOC = "N16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   261)]: NET "MemAdr<16>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<16>"		LOC = "N16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   261)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   261)]: NET "MemAdr<16>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<17>"		LOC = "M13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   262)]: NET "MemAdr<17>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<17>"		LOC = "M13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   262)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   262)]: NET "MemAdr<17>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<18>"		LOC = "V17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   263)]: NET "MemAdr<18>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<18>"		LOC = "V17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   263)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   263)]: NET "MemAdr<18>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<19>"		LOC = "U17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   264)]: NET "MemAdr<19>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<19>"		LOC = "U17"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   264)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   264)]: NET "MemAdr<19>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<20>"		LOC = "T10"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   265)]: NET "MemAdr<20>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<20>"		LOC = "T10"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   265)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   265)]: NET "MemAdr<20>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<21>"		LOC = "M16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   266)]: NET "MemAdr<21>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<21>"		LOC = "M16"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   266)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   266)]: NET "MemAdr<21>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+ERROR:ConstraintSystem:59 - Constraint <NET "MemAdr<22>"		LOC = "U13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   267)]: NET "MemAdr<22>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "MemAdr<22>"		LOC = "U13"	|>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   267)]' could not be found and so the Locate constraint will be removed.
+
+ERROR:ConstraintSystem:59 - Constraint <IOSTANDARD = "LVCMOS33";>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   267)]: NET "MemAdr<22>" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem:191 - The TNM 'sys_clk_pin', does not directly or
+   indirectly drive any flip-flops, latches and/or RAMS and cannot be actively
+   used by the referencing Period constraint 'TS_sys_clk_pin'. If clock manager
+   blocks are directly or indirectly driven, a new TNM constraint will not be
+   derived even though the referencing constraint is a PERIOD constraint unless
+   an output of the clock manager drives flip-flops, latches or RAMs. This TNM
+   is used in the following user PERIOD specification:
+   <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100 MHz HIGH 50%;>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   9)]
+
+WARNING:ConstraintSystem:197 - The following specification is invalid because
+   the referenced TNM constraint was removed:
+   <TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 100 MHz HIGH 50%;>
+   [C:/NESBoy/verilog_files/fpganes-master/fpganes-master/src/Nexys4_Master.ucf(
+   9)]
+
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:   247
+  Number of warnings: 126
+
+Total memory usage is 166324 kilobytes
+
+Total REAL time to NGDBUILD completion:  9 sec
+Total CPU time to NGDBUILD completion:   3 sec
+
+One or more errors were found during NGDBUILD.  No NGD file will be written.
+
+Writing NGDBUILD log file "FirFilter.bld"...
