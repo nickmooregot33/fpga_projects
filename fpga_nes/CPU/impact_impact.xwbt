@@ -1,8 +1,0 @@
-INTSTYLE=impact
-INFILE=C:\NESBoy\fpga_nes\CPU\impact.xsl
-OUTFILE=C:\NESBoy\fpga_nes\CPU\impact.xsl
-FAMILY=None
-PART=None
-WORKINGDIR=C:\NESBoy\fpga_nes\CPU
-LICENSE=iMPACT
-USER_INFO=iMPACT

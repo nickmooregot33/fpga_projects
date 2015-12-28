@@ -1,8 +1,0 @@
-verilog work "../../verilog_files/fpganes-master/fpganes-master/src/compat.v"
-verilog work "../../verilog_files/fpganes-master/fpganes-master/src/vga.v"
-verilog work "../../verilog_files/fpganes-master/fpganes-master/src/nes.v"
-verilog work "../../verilog_files/fpganes-master/fpganes-master/src/hw_uart.v"
-verilog work "../../verilog_files/fpganes-master/fpganes-master/src/hw_sound.v"
-verilog work "../../verilog_files/fpganes-master/fpganes-master/src/hw_led.v"
-verilog work "../../verilog_files/fpganes-master/fpganes-master/src/hq2x.v"
-verilog work "../../verilog_files/fpganes-master/fpganes-master/src/NES_Nexys4.v"

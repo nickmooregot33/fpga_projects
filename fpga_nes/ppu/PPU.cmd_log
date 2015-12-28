@@ -1,5 +1,0 @@
-xst -intstyle ise -ifn "C:/NESBoy/fpga_nes/ppu/PPU.xst" -ofn "C:/NESBoy/fpga_nes/ppu/PPU.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 PPU.ngc PPU.ngd  
-map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o PPU_map.ncd PPU.ngd PPU.pcf 
-par -w -intstyle ise -ol high -t 1 PPU_map.ncd PPU.ncd PPU.pcf 
-trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml PPU.twx PPU.ncd -o PPU.twr PPU.pcf 

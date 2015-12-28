@@ -1,2 +1,0 @@
-# Output products list for <clock_dcm>
-clock_dcm_flist.txt

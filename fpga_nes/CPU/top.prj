@@ -1,4 +1,0 @@
-verilog work "top.v"
-verilog work "../../verilog_files/fpganes-master/fpganes-master/src/hw_uart.v"
-verilog work "magic_memory.v"
-verilog work "cpu.v"

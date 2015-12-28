@@ -1,8 +1,0 @@
-INTSTYLE=impact
-INFILE=C:\NESBoy\fpga_nes\program_test\impact.xsl
-OUTFILE=C:\NESBoy\fpga_nes\program_test\impact.xsl
-FAMILY=Multiple
-PART=Multiple
-WORKINGDIR=C:\NESBoy\fpga_nes\program_test
-LICENSE=iMPACT
-USER_INFO=iMPACT

@@ -1,2 +1,0 @@
- -p xc3s200ft256-4 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT) -toplevel no -ti microblaze_mcs_v1_4_i -msg __xps/ise/xmsgprops.lst
-

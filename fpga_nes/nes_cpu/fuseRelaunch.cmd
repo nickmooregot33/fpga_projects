@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/NESBoy/fpga_nes/nes_cpu/CPU_isim_beh.exe" -prj "C:/NESBoy/fpga_nes/nes_cpu/CPU_beh.prj" "work.CPU" "work.glbl" 
